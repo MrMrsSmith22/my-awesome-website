@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Can't I Find Someone Who Matches My Energy? The Velvet Rope Quiz | Suman Smith</title>
+<meta name="description" content="Maybe there really are no good ones left. Or maybe a velvet rope went up after the last hurt. Ten quick questions will show you which. A free 2-minute quiz from Suman Smith.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+  :root{--bg:#FBF6F1;--ink:#1A1416;--muted:#5E5257;--accent:#A12C61;--accent-dark:#7E1F4B;--pink:#F2AECD;--blush:#FBE4EE;--line:#EADFD8;--white:#FFFFFF}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Lato,system-ui,sans-serif;font-size:18px;line-height:1.6}
+  a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+  .nav{padding:20px 24px;border-bottom:1px solid var(--line)}
+  .nav-in{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .brand{font-family:Montserrat,sans-serif;font-weight:700;font-size:17px;letter-spacing:.14em;color:var(--ink);text-decoration:none}
+  .nav a.back{font-size:16px;color:var(--ink);text-decoration:none}
+  main{max-width:760px;margin:0 auto;padding:48px 24px 88px}
+  .eyebrow{font-family:Montserrat,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--accent);margin:0 0 16px}
+  h1,h2,h3{font-family:Montserrat,sans-serif;margin:0}
+  h1{font-weight:800;font-size:clamp(32px,6vw,52px);line-height:1.1;letter-spacing:-.01em}
+  h1 .hl{background:var(--pink);padding:0 8px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  h2{font-weight:800;font-size:clamp(24px,4.5vw,34px);line-height:1.2}
+  h3{font-weight:700;font-size:20px;margin-bottom:8px}
+  p{margin:0 0 16px}
+  .lead{font-size:21px;color:var(--muted);margin:24px 0}
+  .card{background:var(--white);border-radius:20px;padding:28px}
+  .gets{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .gets li{padding-left:32px;position:relative}
+  .gets li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--pink)}
+  .who{display:flex;gap:20px;align-items:center;margin:32px 0}
+  .who img{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none}
+  .who p{margin:0;font-size:17px}
+  blockquote{margin:0;padding:20px 24px;border-left:4px solid var(--pink);background:var(--blush);border-radius:0 16px 16px 0;font-style:italic}
+  blockquote cite{display:block;margin-top:8px;font-style:normal;font-weight:700;font-size:15px;color:var(--muted)}
+  .btn{display:inline-block;padding:16px 28px;min-height:44px;border-radius:999px;background:var(--accent);color:var(--white);text-decoration:none;font-weight:700;font-size:18px;border:0;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--accent-dark);color:var(--white)}
+  .btn.dark{background:var(--ink)}.btn.dark:hover{background:#000}
+  .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--white)}
+  .btn[disabled]{opacity:.6;cursor:default}
+  .small{font-size:15px;color:var(--muted)}
+  .progress{height:6px;background:var(--line);border-radius:999px;overflow:hidden;margin:8px 0 32px}
+  .progress span{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s}
+  .answers{display:grid;gap:12px;margin-top:28px}
+  .answer{display:block;width:100%;text-align:left;padding:18px 20px;min-height:56px;border-radius:16px;border:2px solid var(--line);background:var(--white);font:inherit;color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s}
+  .answer:hover,.answer:focus-visible{border-color:var(--accent);outline:none}
+  .answer.picked{border-color:var(--accent);background:var(--blush)}
+  .linkbtn{background:none;border:0;padding:8px 0;font:inherit;font-size:16px;color:var(--muted);cursor:pointer;text-decoration:underline}
+  form{display:grid;gap:16px;margin-top:24px}
+  label{font-weight:700;font-size:16px;display:grid;gap:6px}
+  input[type=text],input[type=email]{font:inherit;padding:14px 16px;border-radius:12px;border:2px solid var(--line);background:var(--white);color:var(--ink);width:100%}
+  input:focus{outline:none;border-color:var(--accent)}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .error{color:#A12C2C;font-size:16px;margin:0}
+  .result-head{background:var(--ink);color:var(--white);border-radius:20px;padding:32px 28px;margin-bottom:32px}
+  .result-head .eyebrow{color:var(--pink)}
+  .result-head .meaning{font-size:21px;margin:16px 0 0;color:#E9DDE2}
+  section.block{margin:0 0 28px}
+  .label{font-family:Montserrat,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--accent);margin:0 0 8px;text-transform:uppercase}
+  ol.steps{list-style:none;padding:0;margin:0;display:grid;gap:16px;counter-reset:s}
+  ol.steps li{counter-increment:s;background:var(--white);border-radius:16px;padding:20px 20px 20px 68px;position:relative}
+  ol.steps li::before{content:counter(s);position:absolute;left:20px;top:18px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--white);font-family:Montserrat,sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px}
+  ol.steps strong{display:block;font-family:Montserrat,sans-serif}
+  .next{display:grid;gap:16px}
+  .next .card{display:grid;gap:12px;justify-items:start}
+  .closing{margin-top:40px;text-align:center;font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,4vw,28px);line-height:1.3}
+  .notice{background:var(--blush);border-radius:16px;padding:16px 20px;font-size:16px;margin-bottom:24px}
+  [hidden]{display:none!important}
+  footer{border-top:1px solid var(--line);padding:24px;text-align:center;font-size:15px;color:var(--muted)}
+  @media (max-width:520px){main{padding:32px 16px 72px}.nav{padding:16px}.card{padding:22px}.who{align-items:flex-start}.who img{width:72px;height:72px}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="nav-in">
+  <a class="brand" href="/">SUMAN SMITH</a>
+  <a class="back" href="/">Back to the site</a>
+</div></div>
+
+<main id="app">
+
+  <!-- START -->
+  <div id="screen-start">
+    <p class="eyebrow">THE VELVET ROPE QUIZ · FREE · 2 MINUTES</p>
+    <h1>Why can't I find someone who <span class="hl">matches my energy?</span></h1>
+    <p class="lead">Maybe there really are no good ones left. Or maybe a velvet rope went up after the last hurt, and it's turning people away before they get a chance. Ten quick questions will show you which.</p>
+    <div class="card">
+      <h3>What you get</h3>
+      <ul class="gets">
+        <li>Your result: the meaning you make most often, and why it makes sense.</li>
+        <li>A one-page worksheet to catch it in the moment.</li>
+        <li>Three short emails from me this week.</li>
+      </ul>
+    </div>
+    <div class="who">
+      <img src="/quiz/suman.jpg" alt="Suman Smith, smiling, in a pink jacket and a felt hat" width="96" height="96">
+      <p>I'm Suman Smith. I said no to Oprah at 24, got banned from a dating app at 50, and married my Grade 3 crush at 54. I wrote <em>Stop Cock-Blocking Your Dating Life</em> about everything in between.</p>
+    </div>
+    <blockquote>"Asks the right questions to help you identify how and where you may have cock blocked your love life."<cite>Traci Myles, Vancouver, BC</cite></blockquote>
+    <p style="margin-top:32px"><button class="btn" id="start">Start the quiz</button></p>
+  </div>
+
+  <!-- QUESTION -->
+  <div id="screen-question" hidden>
+    <p class="small" id="q-count" aria-live="polite"></p>
+    <div class="progress" aria-hidden="true"><span id="q-bar"></span></div>
+    <h2 id="q-text"></h2>
+    <div class="answers" id="q-answers"></div>
+    <p style="margin-top:20px"><button class="linkbtn" id="q-back">Back</button></p>
+  </div>
+
+  <!-- EMAIL ASK -->
+  <div id="screen-email" hidden>
+    <p class="eyebrow">THE VELVET ROPE QUIZ</p>
+    <h2>Your result is ready.</h2>
+    <p class="lead" style="margin-bottom:0">Where should I send it? You'll get your full result, your one-page Lift the Velvet Rope worksheet, and three short emails from me this week. That's it.</p>
+    <form id="email-form" novalidate>
+      <label>First name<input type="text" name="name" autocomplete="given-name" required maxlength="80"></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required maxlength="254"></label>
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="error" id="email-error" hidden></p>
+      <div><button class="btn" type="submit" id="email-submit">Show me my result</button></div>
+      <p class="small" style="margin:0">No spam. Unsubscribe anytime.</p>
+    </form>
+  </div>
+
+  <!-- RESULT -->
+  <div id="screen-result" hidden></div>
+
+</main>
+
+<footer>© 2026 Suman Smith · <a href="/">sumansmith.com</a> · This is education and personal experience, not therapy.</footer>
+
+<script>
+(function(){
+  var BOOK = "https://a.co/d/0j9TcEro";
+  var WORKSHEET = "/worksheet.pdf";
+
+  // Each answer's number is the meaning it scores (1 to 5). Never shown.
+  var QUESTIONS = [
+    {q:"They haven't texted back in a day. What's your first thought?", a:[
+      ["“Fine. I wasn't that invested anyway.”",1],
+      ["“Did I say something wrong? Was I too much?”",2],
+      ["“Here we go. They're pulling away.”",3],
+      ["“Honestly, a little mystery keeps it interesting.”",4],
+      ["“Typical. Nobody follows through anymore.”",5]]},
+    {q:"Someone kind and consistent asks you out again. You…", a:[
+      ["Say you're slammed this month.",1],
+      ["Say yes, then start editing yourself so you don't scare them off.",2],
+      ["Say yes, then wonder when the catch will show up.",3],
+      ["Feel… nothing. They're nice, but there's no spark.",4],
+      ["Go, but you're already looking for the red flag.",5]]},
+    {q:"A friend asks, “Why are you still single?” You say…", a:[
+      ["“Honestly? I'm good. I like my peace.”",1],
+      ["“Maybe I'm just hard to love.”",2],
+      ["“Every time it starts going somewhere, it falls apart.”",3],
+      ["“I meet nice people. I just don't feel it.”",4],
+      ["“I just can't find anyone who matches my energy.”",5]]},
+    {q:"Your dating history in one line:", a:[
+      ["Long-distance, too busy, or never quite official.",1],
+      ["I gave everything and lost myself along the way.",2],
+      ["Love bombed, then slowly shut out. Again and again.",3],
+      ["Exciting, intense… and emotionally unavailable.",4],
+      ["Situationships, ghosting and people playing games.",5]]},
+    {q:"Dating apps make you feel…", a:[
+      ["Exposed. I delete them within a week.",1],
+      ["Like I have to be a version of me people will like.",2],
+      ["Anxious. I keep checking if they've replied.",3],
+      ["Bored. Nobody gives me butterflies.",4],
+      ["Done. It's a numbers game, and I'm tired of losing.",5]]},
+    {q:"Things are going well with someone new. You notice yourself…", a:[
+      ["Finding reasons to slow it down.",1],
+      ["Holding back what you really think so you don't ruin it.",2],
+      ["Waiting for the other shoe to drop.",3],
+      ["Losing interest because it feels too easy.",4],
+      ["Assuming it won't last, because it never does.",5]]},
+    {q:"When you need something in a relationship, you…", a:[
+      ["Handle it yourself. It's easier that way.",1],
+      ["Stay quiet. You don't want to be “too much.”",2],
+      ["Ask, then replay how you asked for hours.",3],
+      ["Rarely ask. The people you fall for aren't great at giving anyway.",4],
+      ["Ask once. If they don't get it, you're out.",5]]},
+    {q:"Someone who hurt you comes back saying they've changed. You…", a:[
+      ["Smile politely. The wall stays up.",1],
+      ["Let them back in. Maybe you were the problem.",2],
+      ["Know how this ends, and let them back anyway. They always come back.",3],
+      ["Feel that familiar rush all over again.",4],
+      ["Shut it down. People don't change.",5]]},
+    {q:"Deep down, the question you ask yourself most is…", a:[
+      ["“Is love even worth the risk?”",1],
+      ["“What's wrong with me?”",2],
+      ["“Will I end up alone?”",3],
+      ["“Why don't I feel anything for the good ones?”",4],
+      ["“Is it too late for me?”",5]]},
+    {q:"Which sounds most like the relationship you want?", a:[
+      ["One that adds to my life without costing my peace.",1],
+      ["One where I can be all of me, and still be wanted.",2],
+      ["One where I feel safe and steady, and never have to guess.",3],
+      ["One where the fireworks actually last.",4],
+      ["Two mature people choosing each other.",5]]}
+  ];
+
+  var KATE = '<blockquote>"You feel like you are being encouraged &amp; coached by a wise &amp; beloved friend who has been through what you have been through."<cite>Kate Jay, Chilliwack, BC</cite></blockquote>';
+
+  var RESULTS = {
+    1:{name:"The Guarded Heart", meaning:"I'm fine on my own.",
+      list:"“I'm focusing on me.” “I like my peace.” “I'm too busy right now.”",
+      why:"Somewhere along the way, love cost you more than it gave. Independence became the safest place to stand. And part of it is true: your life is full, and that matters.",
+      cost:"Sometimes “I'm fine” really means “I don't trust love not to disappoint me again.” Protection can look a lot like peace from the outside.",
+      possible:"Picture saying yes to a second coffee and feeling curious instead of cornered, with your peace still intact.",
+      steps:[
+        "Next time you say “I'm too busy,” ask: what actually happened? Someone asked to see me. What am I making it mean? Is this about my calendar, or about not wanting to get hurt again?",
+        "Set the reason aside and notice what's left. Relief? Fear? Tiredness? Let it be there.",
+        "Say yes to one small, low-risk step: a coffee, a second date, a real answer to “how are you?”"],
+      read:"Chapter 1, The Love Lies We Tell Ourselves; Chapter 2, Fear: The Part No One Talks About; Chapter 4, You Don't Need to Be Perfect. You Need to Be Present. (especially “You Can Do the Work, and Still Be Hiding”).",
+      moment:"someone asks to see you"},
+    2:{name:"The Shrinker", meaning:"I'm too much.",
+      list:"“I don't want to be needy.” “It's not a big deal.” “Whatever you want is fine.”",
+      why:"You learned early that being easy kept people close. Staying quiet felt like keeping the peace.",
+      cost:"You end up abandoning yourself to keep someone else. And the person they fall for isn't fully you.",
+      possible:"Picture asking for what you want, and watching them lean in instead of pulling away.",
+      steps:[
+        "Catch the moment you swallow a need. What actually happened? I wanted something. What am I making it mean? “I'm too much.” Is that true, or did I learn to believe it?",
+        "With “too much” set aside, what's there? Where do you feel it in your body?",
+        "Say one small, true thing out loud: “I'd love to hear from you before the weekend.”"],
+      read:"Chapter 4, You Don't Need to Be Perfect. You Need to Be Present. (especially “The Good Girl Who Needed Permission to Love”); Chapter 7, When Someone Pulls Away, And Your Brain Starts Writing Stories (especially “When We Lose Ourselves”); Chapter 11, Becoming the Version of You That Love Recognizes.",
+      moment:"you swallow a need"},
+    3:{name:"The Spiraler", meaning:"Here we go again.",
+      list:"“Something's wrong.” “Should I text, or wait?” “I knew this would happen.”",
+      why:"You've been love bombed, then shut out. Of course your nervous system watches for the next drop. It's trying to protect you.",
+      cost:"The spiral writes the ending before anything has happened. You chase, overthink, or pull away first, and the meaning comes true.",
+      possible:"Picture an unanswered text that's just an unanswered text, and an evening you actually enjoy while you wait.",
+      steps:[
+        "Before you reach for your phone, ask: what actually happened? What am I making it mean? Is this now, or is this then?",
+        "Name what's left. “This is fear. It's loud, and it's old.”",
+        "Wait one hour before acting. Then choose from who you want to be, not from panic. If their words and actions keep not matching, keeping the rope up is the right call."],
+      read:"Chapter 7, When Someone Pulls Away, And Your Brain Starts Writing Stories; Chapter 10, Same Trigger. Different Man.; Chapter 13, Feeling vs. Story.",
+      moment:"you reach for your phone"},
+    4:{name:"The Chemistry Chaser", meaning:"There's no spark.",
+      list:"“They're great on paper, but…” “I just don't feel it.” “I need butterflies.”",
+      why:"Hot and cold feels exciting because it feels familiar. Your body learned that love means waiting, wondering and winning someone over.",
+      cost:"Calm love feels boring, so you walk away from the people who could actually stay.",
+      possible:"Picture someone kind and steady, and a pull toward them that grows the safer you feel.",
+      steps:[
+        "After a date with someone kind, ask: what actually happened? A nice, easy evening. What am I making it mean? “No spark.” Is this no spark, or just no drama?",
+        "Set “no spark” aside and notice the “meh.” Is it boredom, or is it the absence of anxiety?",
+        "Give a kind, consistent person one more date than your old pattern would."],
+      read:"Chapter 3, Breaking the Pattern Loop (especially “The Chemistry Trap”); Chapter 5, Emotional Availability, The Mirror You Don't Want to Look Into (especially “What Healthy Love Actually Feels Like”).",
+      moment:"a kind date feels “meh”"},
+    5:{name:"The Burned-Out Dater", meaning:"There's no one good left.",
+      list:"“Everyone's playing games.” “No one matches my energy.” “Dating apps don't work.” “Is it too late for me?”",
+      why:"You've had the ghosting, the situationships and the endless swiping. You keep showing up and putting in the effort, and you keep meeting people who don't. Being tired is real.",
+      cost:"Exhaustion turns into a filter. Wanting someone who matches your energy is fair. It turns into a rope when you decide in the first five minutes. Then the right person gets screened out with the wrong ones.",
+      possible:"Picture a first date where you're curious instead of keeping score. You still walk away from the ones who don't show up. But the ones who do finally get the chance to.",
+      steps:[
+        "After the next ghost or flat first date, ask: what actually happened? One person didn't work out. What am I making it mean? “There's no one good left.” Is it that no one is good, or that I've stopped letting anyone show me?",
+        "Let yourself admit the disappointment, instead of covering it with “whatever.”",
+        "Treat the next “no” as filtration, not rejection. Then show up once more, somewhere real."],
+      read:"Chapter 6, Why Dating Feels So Complicated; Chapter 8, Dating in the Real World; Chapter 9, Love When It's Not Working, But You Are (the part on filtration).",
+      moment:"you have a date or get ghosted, whichever comes first"}
+  };
+
+  var STEP_NAMES = ["Check the list","Feel what's real","Lift the rope, or don't"];
+
+  var $ = function(id){return document.getElementById(id)};
+  var screens = ["start","question","email","result"];
+  function show(name){
+    screens.forEach(function(s){ $("screen-"+s).hidden = (s!==name); });
+    window.scrollTo(0,0);
+  }
+
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i];a[i]=a[j];a[j]=t; }
+    return a;
+  }
+
+  var order = QUESTIONS.map(function(q){ return shuffle(q.a); });
+  var picks = [];
+  var current = 0;
+  var person = null;
+
+  function renderQuestion(){
+    var q = QUESTIONS[current];
+    $("q-count").textContent = "Question " + (current+1) + " of " + QUESTIONS.length;
+    $("q-bar").style.width = ((current)/QUESTIONS.length*100) + "%";
+    $("q-text").textContent = q.q;
+    var box = $("q-answers"); box.innerHTML = "";
+    order[current].forEach(function(ans){
+      var b = document.createElement("button");
+      b.className = "answer" + (picks[current]===ans[1] ? " picked" : "");
+      b.type = "button";
+      b.textContent = ans[0];
+      b.addEventListener("click", function(){
+        picks[current] = ans[1];
+        if (current < QUESTIONS.length-1){ current++; renderQuestion(); window.scrollTo(0,0); }
+        else { show("email"); setTimeout(function(){ document.querySelector('#email-form input[name=name]').focus(); }, 50); }
+      });
+      box.appendChild(b);
+    });
+    $("q-back").textContent = current===0 ? "Back to the start" : "Back";
+  }
+
+  // Most answers wins. A tie goes to the meaning picked on the last tied question.
+  function score(){
+    var count={1:0,2:0,3:0,4:0,5:0}, last={1:-1,2:-1,3:-1,4:-1,5:-1};
+    picks.forEach(function(m,i){ count[m]++; last[m]=i; });
+    var best=null;
+    [1,2,3,4,5].forEach(function(m){
+      if (best===null || count[m]>count[best] || (count[m]===count[best] && last[m]>last[best])) best=m;
+    });
+    return best;
+  }
+
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+
+  function renderResult(id, emailOk){
+    var r = RESULTS[id];
+    var html = "";
+    if (!emailOk) html += '<div class="notice">I couldn’t send your email just now, so here’s everything on this page. You can <a href="'+WORKSHEET+'" download>download your worksheet here</a>.</div>';
+    html += '<div class="result-head"><p class="eyebrow">YOUR RESULT</p><h2>'+esc(r.name)+'</h2><p class="meaning">The meaning you make most often: “'+esc(r.meaning)+'”</p></div>';
+    html += '<section class="block"><p class="label">What’s on your list</p><p>'+esc(r.list)+'</p></section>';
+    html += '<section class="block"><p class="label">Why it makes sense</p><p>'+esc(r.why)+'</p></section>';
+    html += '<section class="block"><p class="label">What it costs</p><p>'+esc(r.cost)+'</p></section>';
+    html += '<section class="block"><p class="label">What’s possible</p><p>'+esc(r.possible)+'</p></section>';
+    html += '<section class="block"><p class="label">Your Lift the Velvet Rope</p><ol class="steps">';
+    r.steps.forEach(function(s,i){ html += '<li><strong>'+STEP_NAMES[i]+'</strong>'+esc(s)+'</li>'; });
+    html += '</ol></section>';
+    html += '<section class="block"><p class="label">What to read</p><p>'+esc(r.read)+'</p>'+KATE+'</section>';
+    html += '<section class="block"><p class="label">Your next step</p><div class="next">';
+    html += '<div class="card"><h3>Your worksheet</h3><p style="margin:0">'+(emailOk ? 'Your free Lift the Velvet Rope worksheet is on its way to your inbox. ' : '')+'Try it once this week, the next time '+esc(r.moment)+'.</p><a class="btn" href="'+WORKSHEET+'" download>Download the worksheet</a></div>';
+    html += '<div class="card"><h3>Practise it for 7 days</h3><p style="margin:0">Want to practise this one real moment a day for a week? Lift the Rope in 7 Days is coming soon.</p><button class="btn dark" id="waitlist-btn" type="button">Join the waitlist</button><p class="small" id="waitlist-msg" style="margin:0" hidden></p></div>';
+    html += '<div class="card"><h3>Read the whole story</h3><p style="margin:0">It’s all in <em>Stop Cock-Blocking Your Dating Life</em>. I married at 54. It isn’t too late.</p><a class="btn ghost" href="'+BOOK+'" target="_blank" rel="noopener">Get the book</a></div>';
+    html += '</div></section>';
+    html += '<p class="closing">Nothing is wrong with you. You’re just very good at staying safe.</p>';
+    $("screen-result").innerHTML = html;
+    show("result");
+
+    $("waitlist-btn").addEventListener("click", function(){
+      var btn=this, msg=$("waitlist-msg");
+      btn.disabled=true; btn.textContent="Adding you…";
+      post({email:person.email, name:person.name, list:"waitlist"}).then(function(ok){
+        msg.hidden=false;
+        if (ok){ btn.textContent="You’re on the list"; msg.textContent="You’ll hear first when it opens."; }
+        else { btn.disabled=false; btn.textContent="Join the waitlist"; msg.textContent="That didn’t go through. Please try again in a minute."; }
+      });
+    });
+  }
+
+  function post(body){
+    return fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+      .then(function(r){ return r.ok; }).catch(function(){ return false; });
+  }
+
+  $("start").addEventListener("click", function(){ current=0; show("question"); renderQuestion(); });
+  $("q-back").addEventListener("click", function(){
+    if (current===0) show("start"); else { current--; renderQuestion(); }
+  });
+
+  $("email-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f=e.target, err=$("email-error");
+    var name=f.elements["name"].value.trim(), email=f.email.value.trim();
+    if (!name){ err.textContent="Please add your first name."; err.hidden=false; f.elements["name"].focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent="Please check your email address."; err.hidden=false; f.email.focus(); return; }
+    err.hidden=true;
+    var btn=$("email-submit"); btn.disabled=true; btn.textContent="One moment…";
+    person={name:name,email:email};
+    var result=score();
+    post({name:name,email:email,result:result,list:"quiz",website:f.website.value}).then(function(ok){ renderResult(result, ok); });
+  });
+})();
+</script>
+</body>
+</html>
