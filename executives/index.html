@@ -148,10 +148,11 @@
     err.hidden=true; btn.disabled=true; btn.textContent="Adding you…";
     fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},
       body:JSON.stringify({email:email,name:$("wl-name").value.trim(),website:$("wl-website").value,list:"executive"})})
-      .then(function(r){return r.ok;}).catch(function(){return false;})
-      .then(function(ok){
-        if(ok){ $("wl").hidden=true; $("wl-done").hidden=false; }
-        else { btn.disabled=false; btn.textContent="Join the waitlist"; err.textContent="That didn't go through. Please try again in a minute, or message me on LinkedIn."; err.hidden=false; }
+      .then(function(r){return r.json().catch(function(){return {ok:false,error:"http_"+r.status};});})
+      .catch(function(){return {ok:false,error:"network"};})
+      .then(function(d){
+        if(d && d.ok){ $("wl").hidden=true; $("wl-done").hidden=false; }
+        else { btn.disabled=false; btn.textContent="Join the waitlist"; err.textContent="That didn't go through. Please try again in a minute, or message me on LinkedIn. (Code: "+((d&&d.error)||"unknown")+")"; err.hidden=false; }
       });
   });
 })();
