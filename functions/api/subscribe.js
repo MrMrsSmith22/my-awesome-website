@@ -53,6 +53,9 @@ export async function onRequest({ request, env }) {
 
   const fields = {};
   if (name) fields.name = name;
+  // Optional phone (executive waitlist). Stored in MailerLite's built-in "phone" field.
+  const phone = String(data.phone || "").trim().slice(0, 40);
+  if (phone) fields.phone = phone;
   const result = RESULTS[Number(data.result)];
   if (list === "quiz" && result) {
     fields.quiz_result = result.name;

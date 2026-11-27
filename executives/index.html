@@ -50,7 +50,7 @@
   .linkbtn{background:none;border:0;padding:8px 0;font:inherit;font-size:16px;color:var(--muted);cursor:pointer;text-decoration:underline}
   form{display:grid;gap:16px;margin-top:24px}
   label{font-weight:700;font-size:16px;display:grid;gap:6px}
-  input[type=text],input[type=email]{font:inherit;padding:14px 16px;border-radius:12px;border:2px solid var(--line);background:var(--white);color:var(--ink);width:100%}
+  input[type=text],input[type=email],input[type=tel]{font:inherit;padding:14px 16px;border-radius:12px;border:2px solid var(--line);background:var(--white);color:var(--ink);width:100%}
   input:focus{outline:none;border-color:var(--accent)}
   .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
   .error{color:#A12C2C;font-size:16px;margin:0}
@@ -77,6 +77,8 @@
   .signup{background:var(--white);border-radius:20px;padding:32px 28px;margin-top:40px}
   .signup form{margin-top:16px}
   .fit{display:grid;gap:12px;margin-top:8px}
+  .for{font-weight:700;margin:-8px 0 24px}
+  .hint{font-weight:400;font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -88,6 +90,7 @@
   <p class="eyebrow">PRIVATE ADVISORY · FOR SINGLE EXECUTIVES</p>
   <h1>You have advisors for every major decision. <span class="hl">Except this one.</span></h1>
   <p class="lead">Executives have strategy teams for their companies, yet they make their most important life decisions alone. The Executive Blindspot Audit is a private, one-on-one look at the patterns quietly deciding who gets close to you.</p>
+  <p class="for">Built for executives. Open to anyone used to making big decisions.</p>
   <p><a class="btn" href="#join">Join the waitlist</a></p>
 
   <section class="block" style="margin-top:48px">
@@ -100,6 +103,12 @@
       <li>The "type" you keep choosing, and why it keeps ending the same way</li>
       <li>Where the instincts that serve you at work misfire over dinner</li>
       <li>Which of your "no's" are real standards and which are old protection</li>
+    </ul>
+    <h3 style="margin-top:32px">What's included</h3>
+    <ul class="gets">
+      <li>A 90-minute private deep dive</li>
+      <li>A written report mapping which of your "no's" are real standards and which are old protection</li>
+      <li>A 45-minute follow-up two weeks later</li>
     </ul>
   </section>
 
@@ -124,7 +133,8 @@
     <form id="wl" novalidate>
       <label>First name <input type="text" id="wl-name" autocomplete="given-name"></label>
       <label>Email <input type="email" id="wl-email" autocomplete="email" required></label>
-      <div class="hp" aria-hidden="true"><label>Website <input type="text" id="wl-website" tabindex="-1" autocomplete="off"></label></div>
+      <label>Phone (optional) <input type="tel" id="wl-phone" autocomplete="tel" inputmode="tel"><span class="hint">Only used to arrange a private call. Never shared.</span></label>
+      <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" id="wl-website" tabindex="-1" autocomplete="off"></label></div>
       <p class="error" id="wl-error" hidden></p>
       <div><button class="btn" type="submit" id="wl-btn">Join the waitlist</button></div>
     </form>
@@ -134,7 +144,7 @@
 
   <section class="block" style="margin-top:40px">
     <p class="label">Not quite you?</p>
-    <p>The <a href="/#call">Clarity Call</a> is the same kind of work in a single 45-minute session, open to anyone, and you can book it now.</p>
+    <p>The <a href="/#call">Clarity Call</a> is the same kind of work in a single 45-minute session, open to anyone, and you can book it now. A Clarity Call booked first is credited toward the Audit.</p>
   </section>
 </main>
 <footer>© 2026 Suman Smith</footer>
@@ -147,7 +157,7 @@
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent="Please enter a valid email address."; err.hidden=false; return; }
     err.hidden=true; btn.disabled=true; btn.textContent="Adding you…";
     fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({email:email,name:$("wl-name").value.trim(),website:$("wl-website").value,list:"executive"})})
+      body:JSON.stringify({email:email,name:$("wl-name").value.trim(),phone:$("wl-phone").value.trim(),website:$("wl-website").value,list:"executive"})})
       .then(function(r){return r.json().catch(function(){return {ok:false,error:"http_"+r.status};});})
       .catch(function(){return {ok:false,error:"network"};})
       .then(function(d){
