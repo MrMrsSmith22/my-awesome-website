@@ -5,6 +5,8 @@
 //   MAILERLITE_API_KEY           secret, from MailerLite > Integrations > API
 //   MAILERLITE_QUIZ_GROUP_ID     group that starts the 3-email automation
 //   MAILERLITE_WAITLIST_GROUP_ID group for the Lift the Rope in 7 Days waitlist
+//   MAILERLITE_PROGRAM_GROUP_ID  group for the Lift the Velvet Rope Program waitlist
+//                                (optional: until it is set, Program signups join the 7 Days group)
 //   MAILERLITE_EXECUTIVE_GROUP_ID group for the Executive Blindspot Audit waitlist
 
 const RESULTS = {
@@ -29,6 +31,7 @@ export async function onRequest({ request, env }) {
       api_key: Boolean(env.MAILERLITE_API_KEY),
       quiz_group: Boolean(env.MAILERLITE_QUIZ_GROUP_ID),
       waitlist_group: Boolean(env.MAILERLITE_WAITLIST_GROUP_ID),
+      program_group: Boolean(env.MAILERLITE_PROGRAM_GROUP_ID),
       executive_group: Boolean(env.MAILERLITE_EXECUTIVE_GROUP_ID),
     });
   }
@@ -53,6 +56,7 @@ export async function onRequest({ request, env }) {
   const GROUPS = {
     quiz: env.MAILERLITE_QUIZ_GROUP_ID,
     waitlist: env.MAILERLITE_WAITLIST_GROUP_ID,
+    program: env.MAILERLITE_PROGRAM_GROUP_ID || env.MAILERLITE_WAITLIST_GROUP_ID,
     executive: env.MAILERLITE_EXECUTIVE_GROUP_ID,
   };
   const list = Object.hasOwn(GROUPS, data.list) ? data.list : "quiz";
