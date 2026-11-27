@@ -98,13 +98,15 @@
 <script>
 (function(){
   var $=function(id){return document.getElementById(id);};
+  // /waitlist/?for=program joins the Program waitlist; anything else is Lift the Rope in 7 Days.
+  var LIST=/[?&]for=program\b/.test(location.search)?"program":"waitlist";
   $("wl").addEventListener("submit", function(e){
     e.preventDefault();
     var email=$("wl-email").value.trim(), err=$("wl-error"), btn=$("wl-btn");
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent="Please enter a valid email address."; err.hidden=false; return; }
     err.hidden=true; btn.disabled=true; btn.textContent="Adding you…";
     fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({email:email,name:$("wl-name").value.trim(),website:$("wl-website").value,list:"waitlist"})})
+      body:JSON.stringify({email:email,name:$("wl-name").value.trim(),website:$("wl-website").value,list:LIST})})
       .then(function(r){return r.ok;}).catch(function(){return false;})
       .then(function(ok){
         if(ok){ $("wl").hidden=true; $("wl-done").hidden=false; }
