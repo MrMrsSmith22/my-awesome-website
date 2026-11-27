@@ -22,6 +22,16 @@ const json = (body, status = 200) =>
   });
 
 export async function onRequest({ request, env }) {
+  // Visiting /api/subscribe in a browser shows which settings this deployment can see
+  // (true/false only, never the values), so a missing variable is easy to spot.
+  if (request.method === "GET") {
+    return json({
+      api_key: Boolean(env.MAILERLITE_API_KEY),
+      quiz_group: Boolean(env.MAILERLITE_QUIZ_GROUP_ID),
+      waitlist_group: Boolean(env.MAILERLITE_WAITLIST_GROUP_ID),
+      executive_group: Boolean(env.MAILERLITE_EXECUTIVE_GROUP_ID),
+    });
+  }
   if (request.method !== "POST") return json({ ok: false, error: "method_not_allowed" }, 405);
 
   let data;
