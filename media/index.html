@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaking &amp; Media | Suman Smith</title>
+<meta name="description" content="Suman Smith, author of Stop Cock-Blocking Your Dating Life, speaks about fear, commitment and the stories that keep high achievers single. Book her for your podcast or event.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+  :root{--bg:#FBF6F1;--ink:#1A1416;--muted:#5E5257;--accent:#A12C61;--accent-dark:#7E1F4B;--pink:#F2AECD;--blush:#FBE4EE;--line:#EADFD8;--white:#FFFFFF}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Lato,system-ui,sans-serif;font-size:18px;line-height:1.6}
+  a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+  .nav{padding:20px 24px;border-bottom:1px solid var(--line)}
+  .nav-in{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .brand{font-family:Montserrat,sans-serif;font-weight:700;font-size:17px;letter-spacing:.14em;color:var(--ink);text-decoration:none}
+  .nav a.back{font-size:16px;color:var(--ink);text-decoration:none}
+  main{max-width:760px;margin:0 auto;padding:48px 24px 88px}
+  .eyebrow{font-family:Montserrat,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--accent);margin:0 0 16px}
+  h1,h2,h3{font-family:Montserrat,sans-serif;margin:0}
+  h1{font-weight:800;font-size:clamp(32px,6vw,52px);line-height:1.1;letter-spacing:-.01em}
+  h1 .hl{background:var(--pink);padding:0 8px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  h2{font-weight:800;font-size:clamp(24px,4.5vw,34px);line-height:1.2;margin-bottom:20px}
+  h3{font-weight:700;font-size:20px;line-height:1.3}
+  p{margin:0 0 16px}
+  .lead{font-size:21px;color:var(--muted);margin:24px 0}
+  .btn{display:inline-block;padding:16px 28px;min-height:44px;border-radius:999px;background:var(--accent);color:var(--white);text-decoration:none;font-weight:700;font-size:18px;border:0;cursor:pointer;font-family:inherit}
+  .btn:hover{background:var(--accent-dark);color:var(--white)}
+  .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--white)}
+  .btn[disabled]{opacity:.6;cursor:default}
+  .small{font-size:15px;color:var(--muted)}
+  section.block{margin:56px 0 0}
+  .label{font-family:Montserrat,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--accent);margin:0 0 8px;text-transform:uppercase}
+  .card{background:var(--white);border-radius:20px;padding:28px}
+
+  /* As Heard On */
+  .episodes{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .episode{background:var(--white);border-radius:18px;padding:22px 24px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between}
+  .episode .ep-text{flex:1 1 320px;min-width:0}
+  .episode .show{font-family:Montserrat,sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
+  .episode .title{font-family:Montserrat,sans-serif;font-weight:700;font-size:19px;line-height:1.3;margin:0 0 4px}
+  .episode time{font-size:15px;color:var(--muted)}
+  .listen{display:inline-block;padding:10px 20px;min-height:44px;border-radius:999px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px}
+  .listen:hover{background:var(--ink);color:var(--white)}
+  .episode.placeholder{background:transparent;border:2px dashed var(--accent)}
+  .episode.placeholder .listen{opacity:.5;pointer-events:none}
+  .tag{display:inline-block;background:var(--accent);color:var(--white);font-family:Montserrat,sans-serif;font-weight:700;font-size:11px;letter-spacing:.12em;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+
+  /* Speaking topics */
+  .topics{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .topic{background:var(--ink);color:var(--white);border-radius:20px;padding:28px}
+  .topic h3{color:var(--white)}
+  .topic h3 span{display:block;margin-top:8px;font-family:Lato,system-ui,sans-serif;font-weight:400;font-style:italic;font-size:18px;color:#E3D8DD}
+
+  /* Bio */
+  .bio{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+  .bio img{flex:0 0 220px;width:220px;height:300px;object-fit:cover;object-position:center 20%;border-radius:20px}
+  .bio .bio-text{flex:1 1 300px;min-width:0}
+  .bio .bio-text p{color:#3E3438}
+  .notice{background:var(--blush);border-radius:16px;padding:16px 20px;font-size:16px;margin:8px 0 0}
+
+  /* Form */
+  .signup{background:var(--white);border-radius:20px;padding:32px 28px}
+  form{display:grid;gap:16px;margin-top:20px}
+  label{font-weight:700;font-size:16px;display:grid;gap:6px}
+  .hint{font-weight:400;font-size:14px;color:var(--muted)}
+  input[type=text],input[type=email],textarea{font:inherit;padding:14px 16px;border-radius:12px;border:2px solid var(--line);background:var(--white);color:var(--ink);width:100%}
+  textarea{min-height:140px;resize:vertical}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  .error{color:#A12C2C;font-size:16px;margin:0}
+  [hidden]{display:none!important}
+  footer{border-top:1px solid var(--line);padding:24px;text-align:center;font-size:15px;color:var(--muted)}
+  @media (max-width:520px){main{padding:32px 16px 72px}.nav{padding:16px}.card,.signup,.topic{padding:22px}.episode{padding:20px}.bio img{flex-basis:100%;width:100%;height:360px}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="nav-in">
+  <a class="brand" href="/">SUMAN SMITH</a>
+  <a class="back" href="/">Back to the site</a>
+</div></div>
+<main>
+
+  <!-- a) INTRO -->
+  <p class="eyebrow">SPEAKING &amp; MEDIA</p>
+  <h1>Fear, commitment and the stories that <span class="hl">keep high achievers single.</span></h1>
+  <p class="lead">Suman Smith is the author of <em>Stop Cock-Blocking Your Dating Life</em> and spent almost 20 years at the engagement ring counter before marrying for the first time at 54. She speaks about fear, commitment and the stories that keep high achievers single.</p>
+  <p><a class="btn" href="#book-suman">Book Suman</a></p>
+
+  <!-- b) AS HEARD ON
+       To add an interview: copy one <li class="episode"> block, paste it at the TOP of the list
+       (newest first), and fill in the show name, episode title, date and Listen link.
+       The datetime="" value is the date as YYYY-MM-DD.
+       Placeholder entries have class="episode placeholder" and a PLACEHOLDER tag.
+       When you replace one, change the class to just "episode" and delete the tag line. -->
+  <section class="block" id="as-heard-on">
+    <p class="label">As heard on</p>
+    <h2>Interviews and podcasts</h2>
+    <ul class="episodes">
+      <li class="episode placeholder">
+        <div class="ep-text">
+          <span class="tag">PLACEHOLDER</span>
+          <p class="show">[Show name]</p>
+          <p class="title">[Episode title]</p>
+          <time datetime="">[Month DD, YYYY]</time>
+        </div>
+        <a class="listen" href="#" aria-disabled="true">Listen</a>
+      </li>
+      <li class="episode placeholder">
+        <div class="ep-text">
+          <span class="tag">PLACEHOLDER</span>
+          <p class="show">[Show name]</p>
+          <p class="title">[Episode title]</p>
+          <time datetime="">[Month DD, YYYY]</time>
+        </div>
+        <a class="listen" href="#" aria-disabled="true">Listen</a>
+      </li>
+      <li class="episode placeholder">
+        <div class="ep-text">
+          <span class="tag">PLACEHOLDER</span>
+          <p class="show">[Show name]</p>
+          <p class="title">[Episode title]</p>
+          <time datetime="">[Month DD, YYYY]</time>
+        </div>
+        <a class="listen" href="#" aria-disabled="true">Listen</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- c) SPEAKING TOPICS
+       To add a topic: copy the <li class="topic"> block below and change the title and subtitle. -->
+  <section class="block" id="topics">
+    <p class="label">Speaking topics</p>
+    <h2>What Suman talks about</h2>
+    <ul class="topics">
+      <li class="topic">
+        <h3>Fear Dressed Up as High Standards <span>What the engagement ring counter taught me about commitment.</span></h3>
+      </li>
+      <!-- Topic 2 goes here -->
+      <!-- Topic 3 goes here -->
+    </ul>
+  </section>
+
+  <!-- d) BIO AND PHOTO (same bio and photo as the About section on the homepage) -->
+  <section class="block" id="bio">
+    <p class="label">Bio and photo</p>
+    <h2>About Suman</h2>
+    <div class="bio">
+      <img src="/assets/7caea5bb9c06d1ac807e03475bd47219.jpg" alt="Suman Smith" width="220" height="300">
+      <div class="bio-text">
+        <p>Suman Smith is the author of <em>Stop Cock-Blocking Your Dating Life</em> and the creator of Lift the Velvet Rope, a three-step method for telling real standards apart from old fears.</p>
+        <p>She grew up in a culture where love was decided for you. At 24, she said no to Oprah, then went on her show to talk about choosing love for yourself. Years of long-distance relationships and a dating-app ban at 50 followed, until she reconnected with her Grade 3 crush and married him at 54.</p>
+        <p>Since 2007, she has designed engagement rings and listened to couples' love stories across the table. It taught her how people really choose, and what quietly gets in the way.</p>
+      </div>
+    </div>
+    <p class="notice"><strong>For hosts:</strong> you're welcome to use this bio, as is or shortened, and this photo in your show notes, episode artwork and event listings. <a href="/assets/7caea5bb9c06d1ac807e03475bd47219.jpg" download="suman-smith-photo.jpg">Download the full-size photo</a>.</p>
+  </section>
+
+  <!-- e) BOOK SUMAN FORM -->
+  <section class="block" id="book-suman">
+    <div class="signup">
+      <p class="label">Book Suman</p>
+      <h2>Podcast and speaking requests</h2>
+      <p>Tell me a little about your show or event and I'll get back to you personally.</p>
+      <form id="bk" action="https://formspree.io/f/xwlojpvn" method="POST" novalidate>
+        <label>Name <input type="text" id="bk-name" name="name" autocomplete="name" required></label>
+        <label>Email <input type="email" id="bk-email" name="email" autocomplete="email" required></label>
+        <label>Show or event name <input type="text" id="bk-show" name="show" required></label>
+        <label>Audience <span class="hint">Who they are, and roughly how many</span><input type="text" id="bk-audience" name="audience"></label>
+        <label>Preferred dates <input type="text" id="bk-dates" name="dates"></label>
+        <label>Message <textarea id="bk-message" name="message"></textarea></label>
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" id="bk-website" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <p class="error" id="bk-error" hidden></p>
+        <div><button class="btn" type="submit" id="bk-btn">Send request</button></div>
+      </form>
+      <div class="notice" id="bk-done" hidden style="margin-top:24px">Thank you. Your request is in, and I'll be in touch soon.</div>
+    </div>
+  </section>
+
+</main>
+<footer>© 2026 Suman Smith</footer>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id);};
+  $("bk").addEventListener("submit", function(e){
+    e.preventDefault();
+    var err=$("bk-error"), btn=$("bk-btn");
+    var name=$("bk-name").value.trim(), email=$("bk-email").value.trim(), show=$("bk-show").value.trim();
+    if(!name || !show){ err.textContent="Please add your name and the show or event name."; err.hidden=false; return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ err.textContent="Please enter a valid email address."; err.hidden=false; return; }
+    err.hidden=true; btn.disabled=true; btn.textContent="Sending…";
+    // Sends to Formspree, which emails Suman. "email" becomes the reply-to; "_gotcha" is Formspree's spam trap.
+    var fd=new FormData($("bk"));
+    fd.append("_subject","Booking request: "+show+" ("+name+")");
+    fetch("https://formspree.io/f/xwlojpvn",{method:"POST",headers:{"Accept":"application/json"},body:fd})
+      .then(function(r){return r.ok?{ok:true}:{ok:false,error:"http_"+r.status};})
+      .catch(function(){return {ok:false,error:"network"};})
+      .then(function(d){
+        if(d && d.ok){ $("bk").hidden=true; $("bk-done").hidden=false; }
+        else { btn.disabled=false; btn.textContent="Send request"; err.innerHTML="That didn't go through. Please try again in a minute, or message me on <a href=\"https://www.linkedin.com/in/mrssumansmith/\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>. (Code: "+((d&&d.error)||"unknown").replace(/[^a-z0-9_]/gi,"")+")"; err.hidden=false; }
+      });
+  });
+})();
+</script>
+</body>
+</html>
